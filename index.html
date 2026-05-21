@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лабораторные работы — Flutter | Фирсов Артем</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+<!-- ==================== ШАПКА ==================== -->
+<header class="site-header">
+  <img src="./logo.png" alt="Логотип" class="logo" />
+  <div>
+    <div class="header-title">Лабораторные работы — Разработка мобильных приложений</div>
+    <div class="header-sub">Flutter · Android APK | Фирсов Артем · ИС302 · НГУЭУ</div>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- ==================== HERO ==================== -->
+  <div class="hero card">
+    <span class="section-kicker">Лабораторные работы</span>
+    <h1>Мобильные приложения на Flutter</h1>
+    <p class="hero-sub">Разработка мобильных приложений · НГУЭУ · 3 курс · ИС302</p>
+    <div class="author-chip">
+      <a href="https://vk.com/xx_arteem_xx" target="_blank" rel="noopener">ВКонтакте</a>
+      <span class="sep">·</span>
+      Фирсов Артем Алексеевич
+      <span class="sep">·</span>
+      Группа ИС302
+    </div>
+  </div>
+
+  <!-- ==================== ОБЩАЯ ИНФОРМАЦИЯ ==================== -->
+  <div class="card">
+    <span class="section-kicker">Общая информация</span>
+    <div class="info-grid">
+      <div class="info-cell">
+        <div class="label">Студент</div>
+        <div class="value">Фирсов Артем Алексеевич</div>
+      </div>
+      <div class="info-cell">
+        <div class="label">Группа</div>
+        <div class="value">ИС302</div>
+      </div>
+      <div class="info-cell">
+        <div class="label">Вуз</div>
+        <div class="value">НГУЭУ</div>
+      </div>
+      <div class="info-cell">
+        <div class="label">Кафедра</div>
+        <div class="value">ИСиТ</div>
+      </div>
+      <div class="info-cell">
+        <div class="label">Дисциплина</div>
+        <div class="value">Разработка мобильных приложений</div>
+      </div>
+      <div class="info-cell">
+        <div class="label">Реализация</div>
+        <div class="value">3-й (продвинутый) уровень</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== СТЕК И РАЗВЁРТЫВАНИЕ ==================== -->
+  <div class="card">
+    <span class="section-kicker">Стек и развёртывание</span>
+    <div class="info-grid">
+      <div class="info-cell">
+        <div class="label">Фреймворк</div>
+        <div class="value">Flutter 3.24</div>
+      </div>
+      <div class="info-cell">
+        <div class="label">Язык</div>
+        <div class="value">Dart 3.3+</div>
+      </div>
+      <div class="info-cell">
+        <div class="label">Дизайн</div>
+        <div class="value">EAM Design System</div>
+      </div>
+      <div class="info-cell">
+        <div class="label">Шрифт</div>
+        <div class="value">Nunito (Google Fonts)</div>
+      </div>
+      <div class="info-cell">
+        <div class="label">CI/CD</div>
+        <div class="value">GitHub Actions</div>
+      </div>
+      <div class="info-cell">
+        <div class="label">Артефакт</div>
+        <div class="value">Signed Release APK</div>
+      </div>
+    </div>
+    <p>Каждый пуш в ветку <code style="background:rgba(0,0,0,0.3);padding:0.1rem 0.4rem;border-radius:4px;font-size:0.85em">main</code> автоматически запускает сборку через GitHub Actions: приложение компилируется в релизный APK, подписывается Keystore-ключом (хранится в GitHub Secrets) и публикуется в GitHub Releases. Ссылки на скачивание ниже всегда ведут на последнюю актуальную версию.</p>
+    <div class="cicd-flow">
+      <span class="step">git push → main</span>
+      <span class="arrow">→</span>
+      <span class="step">GitHub Actions</span>
+      <span class="arrow">→</span>
+      <span class="step">flutter build apk --release</span>
+      <span class="arrow">→</span>
+      <span class="step">Подпись Keystore</span>
+      <span class="arrow">→</span>
+      <span class="step">GitHub Releases</span>
+    </div>
+  </div>
+
+  <!-- ==================== РАЗДЕЛИТЕЛЬ ==================== -->
+  <div class="section-title">
+    <h2>Приложения</h2>
+    <div class="line"></div>
+  </div>
+
+  <!-- ==================== LAB 2: USER PROFILE APP ==================== -->
+  <div class="card">
+    <span class="section-kicker">Лабораторная работа №2</span>
+    <h2>User Profile App</h2>
+    <p>
+      Flutter-приложение с профилем пользователя, галереей и контактами.
+      Реализует адаптированную дизайн-систему EAM: glassmorphism-карточки, тёмный фон,
+      акцентный цвет. Поддерживает переключение тёмной и светлой темы с сохранением
+      выбора между сессиями.
+    </p>
+    <ul class="feature-list">
+      <li>Профиль: аватар, автовычисление возраста, информационные карточки (ВК, Telegram, GitHub, учёба, работа), теги интересов, скачивание резюме в PDF</li>
+      <li>Кнопка «Нравится» с персистентным счётчиком через SharedPreferences</li>
+      <li>Галерея из 30 фотографий с полноэкранным просмотром и мультитач-зумом</li>
+      <li>Список контактов с возможностью совершить звонок напрямую из приложения</li>
+    </ul>
+    <div class="btn-row">
+      <a class="btn btn-primary"
+         href="https://github.com/xx-arteeem-xx/flatter-lab-2/releases/latest/download/app-release.apk"
+         target="_blank" rel="noopener">
+        ⬇ Скачать APK
+      </a>
+      <a class="btn btn-ghost"
+         href="https://github.com/xx-arteeem-xx/flatter-lab-2"
+         target="_blank" rel="noopener">
+        GitHub →
+      </a>
+    </div>
+  </div>
+
+  <!-- ==================== LAB 3: FLUTTERCAFÉ ==================== -->
+  <div class="card">
+    <span class="section-kicker">Лабораторная работа №3</span>
+    <h2>FlutterCafé</h2>
+    <p>
+      Приложение-меню кафе на Flutter с полным каталогом блюд, умным поиском и корзиной.
+      Дизайн выполнен в EAM Design System (glassmorphism). Поддерживает переключение
+      тёмной и светлой темы с автоматическим сохранением предпочтения пользователя.
+    </p>
+    <ul class="feature-list">
+      <li>5 категорий и 26 блюд с описаниями ингредиентов и изображениями</li>
+      <li>Корзина с добавлением/удалением позиций, подсчётом суммы и бейджем на иконке вкладки</li>
+      <li>Глобальный поиск по всем блюдам в реальном времени через TextField</li>
+      <li>Экран деталей блюда с выбором количества порций перед добавлением в корзину</li>
+    </ul>
+    <div class="btn-row">
+      <a class="btn btn-primary"
+         href="https://github.com/xx-arteeem-xx/flutter-lab-3/releases/latest/download/app-release.apk"
+         target="_blank" rel="noopener">
+        ⬇ Скачать APK
+      </a>
+      <a class="btn btn-ghost"
+         href="https://github.com/xx-arteeem-xx/flutter-lab-3"
+         target="_blank" rel="noopener">
+        GitHub →
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- ==================== ФУТЕР ==================== -->
+<footer>
+  © 2025 Фирсов Артем Алексеевич · ИС302 · НГУЭУ &nbsp;·&nbsp;
+  <a href="https://vk.com/xx_arteem_xx" target="_blank" rel="noopener">ВКонтакте</a>
+</footer>
+
+</body>
+</html>
