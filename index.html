@@ -4,6 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Лабораторные работы — Flutter | Фирсов Артем</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="./favicon.ico" />
+  <link rel="icon" type="image/png" href="./logo.png" />
+
+  <!-- SEO -->
+  <meta name="description" content="Мобильные приложения на Flutter — лабораторные работы студента группы ИС302 Фирсова Артема Алексеевича (НГУЭУ). Скачать APK: User Profile App, FlutterCafé, FitDay, EventHub." />
+
+  <!-- Open Graph (ВКонтакте, Telegram, WhatsApp и др.) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:url" content="https://xx-arteeem-xx.github.io/flutter-lab-site/" />
+  <meta property="og:title" content="Flutter Apps — Фирсов Артем · ИС302" />
+  <meta property="og:description" content="Мобильные приложения на Flutter: User Profile App, FlutterCafé, FitDay, EventHub. Лабораторные работы студента НГУЭУ — скачать APK." />
+  <meta property="og:image" content="https://xx-arteeem-xx.github.io/flutter-lab-site/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Flutter Lab Site" />
+
+  <!-- Twitter / Telegram fallback -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Flutter Apps — Фирсов Артем · ИС302" />
+  <meta name="twitter:description" content="Мобильные приложения на Flutter: User Profile App, FlutterCafé, FitDay, EventHub. Лабораторные работы студента НГУЭУ — скачать APK." />
+  <meta name="twitter:image" content="https://xx-arteeem-xx.github.io/flutter-lab-site/og-image.png" />
+
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
@@ -36,30 +61,31 @@
   <!-- ==================== ОБЩАЯ ИНФОРМАЦИЯ ==================== -->
   <div class="card">
     <span class="section-kicker">Общая информация</span>
-    <div class="info-grid">
-      <div class="info-cell">
-        <div class="label">Студент</div>
-        <div class="value">Фирсов Артем Алексеевич</div>
+    <div class="info-block">
+      <div class="info-block-title">Сведения о работе</div>
+      <div class="info-row">
+        <span class="info-label">Студент</span>
+        <span class="info-value">Фирсов Артем Алексеевич</span>
       </div>
-      <div class="info-cell">
-        <div class="label">Группа</div>
-        <div class="value">ИС302</div>
+      <div class="info-row">
+        <span class="info-label">Группа</span>
+        <span class="info-value">ИС302</span>
       </div>
-      <div class="info-cell">
-        <div class="label">Вуз</div>
-        <div class="value">НГУЭУ</div>
+      <div class="info-row">
+        <span class="info-label">Вуз</span>
+        <span class="info-value">НГУЭУ</span>
       </div>
-      <div class="info-cell">
-        <div class="label">Кафедра</div>
-        <div class="value">ИСиТ</div>
+      <div class="info-row">
+        <span class="info-label">Кафедра</span>
+        <span class="info-value">ИСиТ</span>
       </div>
-      <div class="info-cell">
-        <div class="label">Дисциплина</div>
-        <div class="value">Разработка мобильных приложений</div>
+      <div class="info-row">
+        <span class="info-label">Дисциплина</span>
+        <span class="info-value">Разработка мобильных приложений</span>
       </div>
-      <div class="info-cell">
-        <div class="label">Реализация</div>
-        <div class="value">3-й (продвинутый) уровень</div>
+      <div class="info-row">
+        <span class="info-label">Реализация</span>
+        <span class="info-value">3-й (продвинутый) уровень</span>
       </div>
     </div>
   </div>
@@ -67,32 +93,35 @@
   <!-- ==================== СТЕК И РАЗВЁРТЫВАНИЕ ==================== -->
   <div class="card">
     <span class="section-kicker">Стек и развёртывание</span>
-    <div class="info-grid">
-      <div class="info-cell">
-        <div class="label">Фреймворк</div>
-        <div class="value">Flutter 3.24</div>
+
+    <div class="info-block">
+      <div class="info-block-title">Приложения</div>
+      <div class="info-row">
+        <span class="info-label">Фреймворк</span>
+        <span class="info-value">Flutter 3.24</span>
       </div>
-      <div class="info-cell">
-        <div class="label">Язык</div>
-        <div class="value">Dart 3.3+</div>
+      <div class="info-row">
+        <span class="info-label">Язык</span>
+        <span class="info-value">Dart 3.3+</span>
       </div>
-      <div class="info-cell">
-        <div class="label">Дизайн</div>
-        <div class="value">EAM Design System</div>
+      <div class="info-row">
+        <span class="info-label">Дизайн-система</span>
+        <span class="info-value">EAM Design System (glassmorphism)</span>
       </div>
-      <div class="info-cell">
-        <div class="label">Шрифт</div>
-        <div class="value">Nunito (Google Fonts)</div>
+      <div class="info-row">
+        <span class="info-label">Шрифт</span>
+        <span class="info-value">Nunito · Google Fonts</span>
       </div>
-      <div class="info-cell">
-        <div class="label">CI/CD</div>
-        <div class="value">GitHub Actions</div>
+      <div class="info-row">
+        <span class="info-label">State management</span>
+        <span class="info-value">ValueNotifier + SharedPreferences</span>
       </div>
-      <div class="info-cell">
-        <div class="label">Артефакт</div>
-        <div class="value">Signed Release APK</div>
+      <div class="info-row">
+        <span class="info-label">Тема</span>
+        <span class="info-value">Тёмная / Светлая (сохраняется между сессиями)</span>
       </div>
     </div>
+
     <p>Каждый пуш в ветку <code style="background:rgba(0,0,0,0.3);padding:0.1rem 0.4rem;border-radius:4px;font-size:0.85em">main</code> автоматически запускает сборку через GitHub Actions: приложение компилируется в релизный APK, подписывается Keystore-ключом (хранится в GitHub Secrets) и публикуется в GitHub Releases. Ссылки на скачивание ниже всегда ведут на последнюю актуальную версию.</p>
     <div class="cicd-flow">
       <span class="step">git push → main</span>
@@ -114,129 +143,264 @@
   </div>
 
   <!-- ==================== LAB 2: USER PROFILE APP ==================== -->
-  <div class="card">
+  <div class="card" id="lab2">
     <span class="section-kicker">Лабораторная работа №2</span>
-    <h2>User Profile App</h2>
-    <p>
-      Flutter-приложение с профилем пользователя, галереей и контактами.
-      Реализует адаптированную дизайн-систему EAM: glassmorphism-карточки, тёмный фон,
-      акцентный цвет. Поддерживает переключение тёмной и светлой темы с сохранением
-      выбора между сессиями.
-    </p>
-    <ul class="feature-list">
-      <li>Профиль: аватар, автовычисление возраста, информационные карточки (ВК, Telegram, GitHub, учёба, работа), теги интересов, скачивание резюме в PDF</li>
-      <li>Кнопка «Нравится» с персистентным счётчиком через SharedPreferences</li>
-      <li>Галерея из 30 фотографий с полноэкранным просмотром и мультитач-зумом</li>
-      <li>Список контактов с возможностью совершить звонок напрямую из приложения</li>
-    </ul>
+    <div class="app-header">
+      <span class="app-icon">👤</span>
+      <h2>User Profile App</h2>
+    </div>
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchAppTab('lab2','desc')">Описание</button>
+      <button class="tab-btn" onclick="switchAppTab('lab2','tech')">Технологии</button>
+      <button class="tab-btn" onclick="switchAppTab('lab2','screens')">Скриншоты</button>
+    </div>
+    <div class="tab-panel active" id="lab2-desc">
+      <p>Приложение с тремя разделами: профиль, галерея и контакты. На вкладке профиля — аватар, ссылки на соцсети, информация об учёбе и работе, теги интересов, кнопка скачивания резюме и кнопка «Нравится» со счётчиком, который не сбрасывается при закрытии приложения.</p>
+      <ul class="feature-list">
+        <li>Галерея из 30 фотографий — нажмите любую, чтобы открыть в полный экран с поддержкой зума щипком</li>
+        <li>Раздел контактов: нажмите на номер — и звонок начнётся прямо из приложения</li>
+        <li>Тёмная и светлая тема — переключатель в шапке, выбор сохраняется между запусками</li>
+      </ul>
+    </div>
+    <div class="tab-panel" id="lab2-tech">
+      <p>Полноэкранный просмотр галереи с мультитач-зумом реализован через пакет <code>photo_view</code>. Сетевые изображения кэшируются через <code>cached_network_image</code> — повторных загрузок при прокрутке не происходит.</p>
+      <p>Счётчик «Нравится» хранится в <code>shared_preferences</code> и переживает перезапуск приложения. Переключение темы построено на <code>ValueNotifier&lt;ThemeMode&gt;</code>: вся тема меняется реактивно без перезапуска приложения. Звонок из раздела контактов выполняется через <code>url_launcher</code> по схеме <code>tel:</code>.</p>
+    </div>
+    <div class="tab-panel" id="lab2-screens">
+      <div class="gallery-grid" id="gallery-lab2"></div>
+    </div>
     <div class="btn-row">
-      <a class="btn btn-primary"
-         href="https://github.com/xx-arteeem-xx/flatter-lab-2/releases/latest/download/app-release.apk"
-         target="_blank" rel="noopener">
-        ⬇ Скачать APK
-      </a>
-      <a class="btn btn-ghost"
-         href="https://github.com/xx-arteeem-xx/flatter-lab-2"
-         target="_blank" rel="noopener">
-        GitHub →
-      </a>
+      <a class="btn btn-primary" href="https://github.com/xx-arteeem-xx/flatter-lab-2/releases/latest/download/app-release.apk" target="_blank" rel="noopener">⬇ Скачать APK</a>
+      <a class="btn btn-ghost" href="https://github.com/xx-arteeem-xx/flatter-lab-2" target="_blank" rel="noopener">GitHub →</a>
     </div>
   </div>
 
   <!-- ==================== LAB 3: FLUTTERCAFÉ ==================== -->
-  <div class="card">
+  <div class="card" id="lab3">
     <span class="section-kicker">Лабораторная работа №3</span>
-    <h2>FlutterCafé</h2>
-    <p>
-      Приложение-меню кафе на Flutter с полным каталогом блюд, умным поиском и корзиной.
-      Дизайн выполнен в EAM Design System (glassmorphism). Поддерживает переключение
-      тёмной и светлой темы с автоматическим сохранением предпочтения пользователя.
-    </p>
-    <ul class="feature-list">
-      <li>5 категорий и 26 блюд с описаниями ингредиентов и изображениями</li>
-      <li>Корзина с добавлением/удалением позиций, подсчётом суммы и бейджем на иконке вкладки</li>
-      <li>Глобальный поиск по всем блюдам в реальном времени через TextField</li>
-      <li>Экран деталей блюда с выбором количества порций перед добавлением в корзину</li>
-    </ul>
+    <div class="app-header">
+      <span class="app-icon">☕</span>
+      <h2>FlutterCafé</h2>
+    </div>
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchAppTab('lab3','desc')">Описание</button>
+      <button class="tab-btn" onclick="switchAppTab('lab3','tech')">Технологии</button>
+      <button class="tab-btn" onclick="switchAppTab('lab3','screens')">Скриншоты</button>
+    </div>
+    <div class="tab-panel active" id="lab3-desc">
+      <p>Меню кафе: пять категорий и 26 блюд с описанием ингредиентов. Найдите любое блюдо через строку поиска — результаты обновляются на каждое нажатие. Добавляйте позиции в корзину, выбирайте количество порций и отслеживайте итоговую сумму.</p>
+      <ul class="feature-list">
+        <li>Бейдж на иконке корзины показывает количество позиций — обновляется мгновенно</li>
+        <li>Экран детали блюда: выберите количество порций перед добавлением</li>
+        <li>Тёмная и светлая тема с сохранением выбора между запусками</li>
+      </ul>
+    </div>
+    <div class="tab-panel" id="lab3-tech">
+      <p>Корзина реализована как <code>ValueNotifier&lt;List&lt;CartItem&gt;&gt;</code> — реактивное хранилище в памяти, разделяемое между всеми экранами без сторонних библиотек управления состоянием. Поиск фильтрует список блюд методом <code>where()</code> прямо на модели данных при каждом изменении строки.</p>
+      <p>Бейдж на иконке вкладки корзины собран через <code>Stack</code> + <code>Positioned</code>, подписанный на нотификатор корзины. Тема и корзина управляются двумя независимыми <code>ValueNotifier</code>, оба слушаются через <code>ValueListenableBuilder</code>.</p>
+    </div>
+    <div class="tab-panel" id="lab3-screens">
+      <div class="gallery-grid" id="gallery-lab3"></div>
+    </div>
     <div class="btn-row">
-      <a class="btn btn-primary"
-         href="https://github.com/xx-arteeem-xx/flutter-lab-3/releases/latest/download/app-release.apk"
-         target="_blank" rel="noopener">
-        ⬇ Скачать APK
-      </a>
-      <a class="btn btn-ghost"
-         href="https://github.com/xx-arteeem-xx/flutter-lab-3"
-         target="_blank" rel="noopener">
-        GitHub →
-      </a>
+      <a class="btn btn-primary" href="https://github.com/xx-arteeem-xx/flutter-lab-3/releases/latest/download/app-release.apk" target="_blank" rel="noopener">⬇ Скачать APK</a>
+      <a class="btn btn-ghost" href="https://github.com/xx-arteeem-xx/flutter-lab-3" target="_blank" rel="noopener">GitHub →</a>
     </div>
   </div>
 
   <!-- ==================== LAB 4: FITDAY ==================== -->
-  <div class="card">
+  <div class="card" id="lab4">
     <span class="section-kicker">Лабораторная работа №4</span>
-    <h2>FitDay</h2>
-    <p>
-      Трекер ежедневных тренировок на Flutter: список упражнений с отметкой выполнения,
-      отслеживание прогресса к целям, история занятий и встроенный таймер обратного отсчёта.
-      Реализует EAM Design System с поддержкой тёмной и светлой темы.
-    </p>
-    <ul class="feature-list">
-      <li>8 упражнений с иконками и Switch для отметки выполнения; тап открывает 30-секундный таймер с Start/Pause/Reset и автоматическим SnackBar</li>
-      <li>Прогресс-бары по трём целям: упражнения, калории, время тренировки</li>
-      <li>Настройки: уведомления, звук, вибрация и Slider цели по калориям (100–1000 ккал)</li>
-      <li>Вкладка «История»: кнопка «Завершить день» сохраняет тренировку и сбрасывает список; долгий тап → удаление упражнения через AlertDialog</li>
-    </ul>
+    <div class="app-header">
+      <span class="app-icon">💪</span>
+      <h2>FitDay</h2>
+    </div>
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchAppTab('lab4','desc')">Описание</button>
+      <button class="tab-btn" onclick="switchAppTab('lab4','tech')">Технологии</button>
+      <button class="tab-btn" onclick="switchAppTab('lab4','screens')">Скриншоты</button>
+    </div>
+    <div class="tab-panel active" id="lab4-desc">
+      <p>Трекер тренировок: восемь упражнений с отметкой выполнения. Нажмите на упражнение — запустится 30-секундный таймер, который можно поставить на паузу или сбросить. Следите за прогрессом по упражнениям, калориям и времени. Завершите день одной кнопкой — тренировка сохранится в историю.</p>
+      <ul class="feature-list">
+        <li>Прогресс-бары по трём целям: упражнения, калории, время тренировки</li>
+        <li>Настройки: цель по калориям (100–1000), звук, вибрация и уведомления</li>
+        <li>История тренировок: просматривайте прошлые занятия, удалите ненужные долгим нажатием</li>
+      </ul>
+    </div>
+    <div class="tab-panel" id="lab4-tech">
+      <p>Всё состояние приложения сосредоточено в одном <code>FitDayNotifier extends ValueNotifier&lt;FitDayState&gt;</code> с иммутабельным объектом состояния — все четыре экрана подписаны на единый источник данных, что исключает рассинхронизацию. Это принципиальное отличие от предыдущих лабораторных, где состояние было разделено по отдельным нотификаторам.</p>
+      <p>Таймер построен на <code>Timer.periodic</code> из <code>dart:async</code> без <code>AnimationController</code>. Удаление упражнения вызывается через <code>onLongPress</code> с подтверждением в <code>AlertDialog</code>. Иконка приложения кастомная — сгенерирована через <code>flutter_launcher_icons</code>.</p>
+    </div>
+    <div class="tab-panel" id="lab4-screens">
+      <div class="gallery-grid" id="gallery-lab4"></div>
+    </div>
     <div class="btn-row">
-      <a class="btn btn-primary"
-         href="https://github.com/xx-arteeem-xx/flutter-lab-4/releases/latest/download/app-release.apk"
-         target="_blank" rel="noopener">
-        ⬇ Скачать APK
-      </a>
-      <a class="btn btn-ghost"
-         href="https://github.com/xx-arteeem-xx/flutter-lab-4"
-         target="_blank" rel="noopener">
-        GitHub →
-      </a>
+      <a class="btn btn-primary" href="https://github.com/xx-arteeem-xx/flutter-lab-4/releases/latest/download/app-release.apk" target="_blank" rel="noopener">⬇ Скачать APK</a>
+      <a class="btn btn-ghost" href="https://github.com/xx-arteeem-xx/flutter-lab-4" target="_blank" rel="noopener">GitHub →</a>
     </div>
   </div>
 
   <!-- ==================== LAB 5: EVENTHUB ==================== -->
-  <div class="card">
+  <div class="card" id="lab5">
     <span class="section-kicker">Лабораторная работа №5</span>
-    <h2>EventHub</h2>
-    <p>
-      Приложение-планировщик событий на Flutter: каталог дел с категориями, фильтрацией,
-      поиском и статистикой. Добавление и редактирование событий через BottomSheet
-      с выбором даты и времени. Реализует EAM Design System с переключением темы.
-    </p>
-    <ul class="feature-list">
-      <li>GridView событий (2 колонки) с фильтрацией по 5 категориям через ChoiceChip: Учёба, Спорт, Развлечения, Работа, Личное</li>
-      <li>Поиск по названию, описанию и месту в реальном времени; сортировка по дате, названию или категории</li>
-      <li>Добавление и редактирование через BottomSheet (TextField, DropdownButton, DatePicker, TimePicker); свайп для удаления с undo через SnackBar</li>
-      <li>Вкладка «Статистика»: CircularProgressIndicator для каждой категории с долей событий в процентах</li>
-    </ul>
+    <div class="app-header">
+      <span class="app-icon">📅</span>
+      <h2>EventHub</h2>
+    </div>
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchAppTab('lab5','desc')">Описание</button>
+      <button class="tab-btn" onclick="switchAppTab('lab5','tech')">Технологии</button>
+      <button class="tab-btn" onclick="switchAppTab('lab5','screens')">Скриншоты</button>
+    </div>
+    <div class="tab-panel active" id="lab5-desc">
+      <p>Планировщик событий: добавляйте дела с категорией, датой и временем. Пять категорий — Учёба, Спорт, Развлечения, Работа, Личное. Фильтруйте список, ищите по названию или описанию, сортируйте по дате или названию.</p>
+      <ul class="feature-list">
+        <li>Смахните карточку в сторону, чтобы удалить событие — действие можно отменить</li>
+        <li>Редактирование: нажмите на событие, откройте детали и измените любое поле</li>
+        <li>Вкладка «Статистика»: круговые индикаторы показывают долю каждой категории в процентах</li>
+      </ul>
+    </div>
+    <div class="tab-panel" id="lab5-tech">
+      <p>Свайп для удаления реализован через виджет <code>Dismissible</code> с отменой действия через <code>SnackBar</code>. Форма добавления и редактирования открывается как <code>ModalBottomSheet</code> и содержит системные диалоги <code>showDatePicker</code> и <code>showTimePicker</code> — нативный UI платформы без сторонних пакетов.</p>
+      <p>Список событий отображается через <code>GridView.builder</code> с двумя колонками. Фильтрация по категории — через <code>ChoiceChip</code>, сортировка — через <code>PopupMenuButton</code>. Статистика вычисляется в реальном времени из того же <code>EventsNotifier</code> с иммутабельным состоянием — отдельного слоя для аналитики не потребовалось.</p>
+    </div>
+    <div class="tab-panel" id="lab5-screens">
+      <div class="gallery-grid" id="gallery-lab5"></div>
+    </div>
     <div class="btn-row">
-      <a class="btn btn-primary"
-         href="https://github.com/xx-arteeem-xx/flutter-lab-5/releases/latest/download/app-release.apk"
-         target="_blank" rel="noopener">
-        ⬇ Скачать APK
-      </a>
-      <a class="btn btn-ghost"
-         href="https://github.com/xx-arteeem-xx/flutter-lab-5"
-         target="_blank" rel="noopener">
-        GitHub →
-      </a>
+      <a class="btn btn-primary" href="https://github.com/xx-arteeem-xx/flutter-lab-5/releases/latest/download/app-release.apk" target="_blank" rel="noopener">⬇ Скачать APK</a>
+      <a class="btn btn-ghost" href="https://github.com/xx-arteeem-xx/flutter-lab-5" target="_blank" rel="noopener">GitHub →</a>
     </div>
   </div>
 
 </main>
+
+<!-- ==================== ЛАЙТБОКС ==================== -->
+<div id="lightbox" onclick="if(event.target===this)closeLightbox()">
+  <button class="lb-btn lb-close" onclick="closeLightbox()">✕</button>
+  <button class="lb-btn lb-prev" onclick="prevImage()">&#8249;</button>
+  <img id="lb-img" src="" alt="Скриншот" />
+  <button class="lb-btn lb-next" onclick="nextImage()">&#8250;</button>
+  <div id="lb-counter" class="lb-counter"></div>
+</div>
 
 <!-- ==================== ФУТЕР ==================== -->
 <footer>
   © 2025 Фирсов Артем Алексеевич · ИС302 · НГУЭУ &nbsp;·&nbsp;
   <a href="https://vk.com/xx_arteem_xx" target="_blank" rel="noopener">ВКонтакте</a>
 </footer>
+
+<!-- ==================== JS ==================== -->
+<script>
+  // ===== ВКЛАДКИ =====
+  function switchAppTab(cardId, tab) {
+    const card = document.getElementById(cardId);
+    card.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    card.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    document.getElementById(cardId + '-' + tab).classList.add('active');
+    event.target.classList.add('active');
+  }
+
+  // ===== ГАЛЕРЕИ =====
+  // Назовите файлы скриншотов 1.png, 2.png, ... и положите в соответствующую папку.
+  // Добавьте или уберите строки в массивах по необходимости.
+  const GALLERIES = {
+    lab2: [
+      'images/user-profile/1.jpg',
+      'images/user-profile/2.jpg',
+      'images/user-profile/3.jpg',
+      'images/user-profile/4.jpg',
+    ],
+    lab3: [
+      'images/flutter-cafe/1.jpg',
+      'images/flutter-cafe/2.jpg',
+      'images/flutter-cafe/3.jpg',
+      'images/flutter-cafe/4.jpg',
+    ],
+    lab4: [
+      'images/fit-day/1.jpg',
+      'images/fit-day/2.jpg',
+      'images/fit-day/3.jpg',
+      'images/fit-day/4.jpg',
+      'images/fit-day/5.jpg',
+    ],
+    lab5: [
+      'images/event-hub/1.jpg',
+      'images/event-hub/2.jpg',
+      'images/event-hub/3.jpg',
+      'images/event-hub/4.jpg',
+    ],
+  };
+
+  // Генерация миниатюр
+  Object.entries(GALLERIES).forEach(([key, images]) => {
+    const grid = document.getElementById('gallery-' + key);
+    if (!grid) return;
+    if (!images.length) {
+      grid.innerHTML = '<p class="gallery-empty">Скриншоты появятся позже.</p>';
+      return;
+    }
+    images.forEach((src, i) => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = 'Скриншот ' + (i + 1);
+      img.className = 'gallery-thumb';
+      img.loading = 'lazy';
+      img.onclick = () => openLightbox(key, i);
+      grid.appendChild(img);
+    });
+  });
+
+  // ===== ЛАЙТБОКС =====
+  let _lb = { key: '', index: 0 };
+
+  function openLightbox(key, index) {
+    _lb = { key, index };
+    document.getElementById('lightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+    updateLightbox();
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  function prevImage() {
+    const imgs = GALLERIES[_lb.key];
+    _lb.index = (_lb.index - 1 + imgs.length) % imgs.length;
+    updateLightbox();
+  }
+
+  function nextImage() {
+    const imgs = GALLERIES[_lb.key];
+    _lb.index = (_lb.index + 1) % imgs.length;
+    updateLightbox();
+  }
+
+  function updateLightbox() {
+    document.getElementById('lb-img').src = GALLERIES[_lb.key][_lb.index];
+    document.getElementById('lb-counter').textContent = (_lb.index + 1) + ' / ' + GALLERIES[_lb.key].length;
+  }
+
+  // Клавиатура
+  document.addEventListener('keydown', function (e) {
+    if (!document.getElementById('lightbox').classList.contains('active')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') prevImage();
+    if (e.key === 'ArrowRight') nextImage();
+  });
+
+  // Свайп (мобильные)
+  let _touchX = 0;
+  const lb = document.getElementById('lightbox');
+  lb.addEventListener('touchstart', e => { _touchX = e.touches[0].clientX; }, { passive: true });
+  lb.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - _touchX;
+    if (Math.abs(dx) > 50) dx < 0 ? nextImage() : prevImage();
+  });
+</script>
 
 </body>
 </html>
